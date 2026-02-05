@@ -110,8 +110,7 @@ SECRET_KEY=your-secret-key
 LOG_FILE_PATH=logs/app.log
 ```
 
-**Screenshot required:**
-`.env` file contents (secret values masked).
+
 
 ---
 
@@ -129,8 +128,6 @@ Server will start at:
 http://127.0.0.1:8000/
 ```
 
-**Screenshot required:**
-Terminal showing Django server running successfully.
 
 ---
 
@@ -206,7 +203,7 @@ Every request is logged in the following exact format:
 
 **Screenshot required:**
 `tail -n 5 logs/app.log` showing multiple structured request logs.
-![tail -n 5 logs/app.log](screenshots/tail -n 5 logs:app. log.png)
+![logs/app.log](screenshots/logs_tail.png)
 
 
 ---
@@ -270,8 +267,8 @@ du -h logs/*
 
 * Directory listing showing `app.log`, `app.log.1` … `app.log.5`
 * File sizes around ~5 MB
-![Directory listing](screenshots/ls -lh logs:.png)
-![File sizes](screenshots/du -h logs:*.png)
+![Directory listing](screenshots/logs_ls.png)
+![File sizes](screenshots/logs_du.png)
 
 
 ---
@@ -302,7 +299,7 @@ black .
 
 **Screenshot required:**
 Output showing `All done!` and no files changed.
-![All done!](screenshots/black ..png)
+![All done!](screenshots/black_ok.png)
 
 
 ---
@@ -318,7 +315,7 @@ isort .
 
 **Screenshot required:**
 Output showing imports fixed or skipped.
-![isort .](screenshots/isort •.png)
+![isort .](screenshots/isort_ok.png)
 
 
 ---
@@ -336,7 +333,7 @@ pylint core app
 
 **Screenshot required:**
 Terminal output showing pylint score ≥ 9.5.
-![score](screenshots/pylint core app.png)
+![score](screenshots/pylint_score.png)
 
 
 ---
